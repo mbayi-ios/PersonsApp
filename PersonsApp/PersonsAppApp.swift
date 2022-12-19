@@ -1,0 +1,17 @@
+//
+//  PersonsAppApp.swift
+//  PersonsApp
+//
+//  Created by Amby on 19/12/2022.
+//
+
+import SwiftUI
+
+@main
+struct PersonsAppApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
