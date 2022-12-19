@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct PeopleView: View {
+    @State private var users: [User] = []
+
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     var body: some View {
         NavigationView {
             ZStack {
-                Theme.background
-                    .ignoresSafeArea( edges: .top)
-
+                background
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
-                        ForEach(0...5, id: \.self) { item in
-                           PersonItemView(user: item)
+                        ForEach(users, id: \.id) { user in
+                           PersonItemView(user: user)
                         }
                     }
                     .padding()
@@ -27,13 +27,15 @@ struct PeopleView: View {
             .navigationTitle("Persons")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button {
-
-                    } label: {
-                        Symbols.plus
-                            .font(.system(.headline, design: .rounded)
-                                    .bold())
-                    }
+                    create
+                }
+            }
+            .onAppear {
+                do  {
+                    let res = try StaticJSONMapper.decode(file: "UsersStaticData", type: UsersResponse.self)
+                    users = res.data
+                } catch {
+                    print(error)
                 }
             }
         }
@@ -43,5 +45,24 @@ struct PeopleView: View {
 struct PeopleView_Previews: PreviewProvider {
     static var previews: some View {
         PeopleView()
+    }
+}
+
+
+private extension PeopleView {
+    var background: some View {
+        Theme.background
+            .ignoresSafeArea(edges: .top)
+    }
+
+    var create: some View {
+        Button {
+
+        } label: {
+            Symbols.plus
+                .font(
+                    .system(.headline, design: .rounded)
+                        .bold())
+        }
     }
 }

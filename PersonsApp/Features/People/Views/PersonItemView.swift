@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct PersonItemView: View {
-    let user: Int
+    let user: User
     var body: some View {
         VStack(spacing: .zero) {
-            Rectangle()
-                .fill(.blue)
-                .frame(height: 130)
+            AsyncImage(url: .init(string: user.avatar)) { image in
+                image
+                    .resizable()
+                    .aspectRatio( contentMode: .fill)
+                    .frame(height: 130)
+                    .clipped()
+            } placeholder: {
+                ProgressView()
+            }
 
             VStack(alignment: .leading) {
                
-                PillView(id: user)
-                Text("<Last Name> <First Name>")
+                PillView(id: user.id)
+                Text("\(user.firstName) \(user.lastName)")
                     .foregroundColor(Theme.text)
                     .font(
                         .system(.body, design: .rounded)
