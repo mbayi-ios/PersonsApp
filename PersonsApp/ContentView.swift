@@ -10,7 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding()
+            .onAppear {
+            print("User Response")
+            dump(
+                try? StaticJSONMapper.decode(file: "UserStaticData", type: UsersResponse.self)
+            )
+            print("single user response")
+            dump(
+                try? StaticJSONMapper.decode(file: "SingleUserData", type: UserDetailResponse.self)
+            )
+        }
     }
 }
 
