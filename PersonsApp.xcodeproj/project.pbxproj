@@ -24,6 +24,7 @@
 		89A64E302951041000C3080C /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E2F2951041000C3080C /* PillView.swift */; };
 		89A64E3229510AE200C3080C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E3129510AE200C3080C /* DetailView.swift */; };
 		89A64E362951147C00C3080C /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E352951147C00C3080C /* CreateView.swift */; };
+		89B6287D2951A9C600F5598F /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6287C2951A9C600F5598F /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		89A64E2F2951041000C3080C /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		89A64E3129510AE200C3080C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		89A64E352951147C00C3080C /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		89B6287C2951A9C600F5598F /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		89A64E102950F32F00C3080C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				89B6287B2951A9B300F5598F /* API */,
 				89A64E2E2951040100C3080C /* Views */,
 				89A64E142950F43300C3080C /* Models */,
 				89A64E112950F33800C3080C /* Mapper */,
@@ -218,6 +221,14 @@
 			path = Create;
 			sourceTree = "<group>";
 		};
+		89B6287B2951A9B300F5598F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				89B6287C2951A9C600F5598F /* NetworkingManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +314,7 @@
 				89A64E1F2950F4FC00C3080C /* UsersResponse.swift in Sources */,
 				89A64E2D2951036D00C3080C /* PersonItemView.swift in Sources */,
 				89A64E132950F34700C3080C /* StaticJSONMapper.swift in Sources */,
+				89B6287D2951A9C600F5598F /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
