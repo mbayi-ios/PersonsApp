@@ -45,6 +45,7 @@ struct PeopleView: View {
             }
             .sheet(isPresented: $shouldShowCreate) {
                 CreateView {
+                    haptic(.success)
                     withAnimation(.spring().delay(0.25)) {
                         self.shouldShowSuccess.toggle()
                     }
@@ -58,6 +59,7 @@ struct PeopleView: View {
             .overlay {
                 if shouldShowSuccess {
                     CheckMarkView()
+
                         .transition(.scale.combined(with: .opacity))
                         .onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

@@ -31,6 +31,9 @@
 		89B6288A2951B9C100F5598F /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628892951B9C100F5598F /* CreateViewModel.swift */; };
 		89B6288C2951CAEC00F5598F /* CheckMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6288B2951CAEB00F5598F /* CheckMarkView.swift */; };
 		89B6288F2951D43F00F5598F /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6288E2951D43F00F5598F /* CreateValidator.swift */; };
+		89B628922951DF7800F5598F /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628912951DF7800F5598F /* HapticManager.swift */; };
+		89B628952951E00E00F5598F /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628942951E00E00F5598F /* UserDefaultKeys.swift */; };
+		89B628992951E07D00F5598F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628982951E07D00F5598F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		89B628892951B9C100F5598F /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		89B6288B2951CAEB00F5598F /* CheckMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkView.swift; sourceTree = "<group>"; };
 		89B6288E2951D43F00F5598F /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
+		89B628912951DF7800F5598F /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		89B628942951E00E00F5598F /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		89B628982951E07D00F5598F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,8 @@
 		89A64E102950F32F00C3080C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				89B628932951DFFE00F5598F /* UserDefaults */,
+				89B628902951DF6400F5598F /* Haptic */,
 				89B6287B2951A9B300F5598F /* API */,
 				89A64E2E2951040100C3080C /* Views */,
 				89A64E142950F43300C3080C /* Models */,
@@ -159,6 +167,7 @@
 		89A64E202950F53E00C3080C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				89B628962951E06A00F5598F /* Setting */,
 				89A64E342951146B00C3080C /* Create */,
 				89A64E222950F55600C3080C /* People */,
 				89A64E212950F54D00C3080C /* Detail */,
@@ -295,6 +304,38 @@
 			path = Validator;
 			sourceTree = "<group>";
 		};
+		89B628902951DF6400F5598F /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				89B628912951DF7800F5598F /* HapticManager.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		89B628932951DFFE00F5598F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				89B628942951E00E00F5598F /* UserDefaultKeys.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		89B628962951E06A00F5598F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				89B628972951E07100F5598F /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		89B628972951E07100F5598F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89B628982951E07D00F5598F /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B6288C2951CAEC00F5598F /* CheckMarkView.swift in Sources */,
+				89B628992951E07D00F5598F /* SettingsView.swift in Sources */,
 				89A64E0D2950F05400C3080C /* Theme.swift in Sources */,
 				89B6288F2951D43F00F5598F /* CreateValidator.swift in Sources */,
 				89A64E3229510AE200C3080C /* DetailView.swift in Sources */,
@@ -383,6 +425,8 @@
 				8910342E2950C1D4008EED37 /* PersonsAppApp.swift in Sources */,
 				89A64E1F2950F4FC00C3080C /* UsersResponse.swift in Sources */,
 				89A64E2D2951036D00C3080C /* PersonItemView.swift in Sources */,
+				89B628952951E00E00F5598F /* UserDefaultKeys.swift in Sources */,
+				89B628922951DF7800F5598F /* HapticManager.swift in Sources */,
 				89A64E132950F34700C3080C /* StaticJSONMapper.swift in Sources */,
 				89B628802951AE6F00F5598F /* PeopleViewModel.swift in Sources */,
 				89B6287D2951A9C600F5598F /* NetworkingManager.swift in Sources */,
