@@ -29,6 +29,7 @@
 		89B628832951B15400F5598F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628822951B15400F5598F /* DetailViewModel.swift */; };
 		89B628862951B7CF00F5598F /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628852951B7CF00F5598F /* NewPerson.swift */; };
 		89B6288A2951B9C100F5598F /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628892951B9C100F5598F /* CreateViewModel.swift */; };
+		89B6288C2951CAEC00F5598F /* CheckMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6288B2951CAEB00F5598F /* CheckMarkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		89B628822951B15400F5598F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		89B628852951B7CF00F5598F /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		89B628892951B9C100F5598F /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
+		89B6288B2951CAEB00F5598F /* CheckMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				89A64E2F2951041000C3080C /* PillView.swift */,
+				89B6288B2951CAEB00F5598F /* CheckMarkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B6288C2951CAEC00F5598F /* CheckMarkView.swift in Sources */,
 				89A64E0D2950F05400C3080C /* Theme.swift in Sources */,
 				89A64E3229510AE200C3080C /* DetailView.swift in Sources */,
 				89A64E0F2950F06500C3080C /* Symbols.swift in Sources */,
