@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PeopleView: View {
     @State private var users: [User] = []
+    @State private var shouldShowCreate = false
 
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     var body: some View {
@@ -42,6 +43,9 @@ struct PeopleView: View {
                     print(error)
                 }
             }
+            .sheet(isPresented: $shouldShowCreate) {
+                CreateView()
+            }
         }
     }
 }
@@ -61,7 +65,7 @@ private extension PeopleView {
 
     var create: some View {
         Button {
-
+            shouldShowCreate.toggle()
         } label: {
             Symbols.plus
                 .font(

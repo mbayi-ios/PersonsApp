@@ -23,6 +23,7 @@
 		89A64E2D2951036D00C3080C /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E2C2951036D00C3080C /* PersonItemView.swift */; };
 		89A64E302951041000C3080C /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E2F2951041000C3080C /* PillView.swift */; };
 		89A64E3229510AE200C3080C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E3129510AE200C3080C /* DetailView.swift */; };
+		89A64E362951147C00C3080C /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E352951147C00C3080C /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		89A64E2C2951036D00C3080C /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
 		89A64E2F2951041000C3080C /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		89A64E3129510AE200C3080C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		89A64E352951147C00C3080C /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		89A64E202950F53E00C3080C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				89A64E342951146B00C3080C /* Create */,
 				89A64E222950F55600C3080C /* People */,
 				89A64E212950F54D00C3080C /* Detail */,
 			);
@@ -205,6 +208,14 @@
 				89A64E3129510AE200C3080C /* DetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		89A64E342951146B00C3080C /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				89A64E352951147C00C3080C /* CreateView.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 				89A64E162950F44000C3080C /* Model.swift in Sources */,
 				89A64E282950F5F600C3080C /* UserDetailResponse.swift in Sources */,
 				89A64E302951041000C3080C /* PillView.swift in Sources */,
+				89A64E362951147C00C3080C /* CreateView.swift in Sources */,
 				8910342E2950C1D4008EED37 /* PersonsAppApp.swift in Sources */,
 				89A64E1F2950F4FC00C3080C /* UsersResponse.swift in Sources */,
 				89A64E2D2951036D00C3080C /* PersonItemView.swift in Sources */,
