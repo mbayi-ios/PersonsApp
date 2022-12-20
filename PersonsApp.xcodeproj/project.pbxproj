@@ -30,6 +30,7 @@
 		89B628862951B7CF00F5598F /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628852951B7CF00F5598F /* NewPerson.swift */; };
 		89B6288A2951B9C100F5598F /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628892951B9C100F5598F /* CreateViewModel.swift */; };
 		89B6288C2951CAEC00F5598F /* CheckMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6288B2951CAEB00F5598F /* CheckMarkView.swift */; };
+		89B6288F2951D43F00F5598F /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6288E2951D43F00F5598F /* CreateValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		89B628852951B7CF00F5598F /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		89B628892951B9C100F5598F /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		89B6288B2951CAEB00F5598F /* CheckMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkView.swift; sourceTree = "<group>"; };
+		89B6288E2951D43F00F5598F /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 		89A64E342951146B00C3080C /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				89B6288D2951D42F00F5598F /* Validator */,
 				89B628882951B9AE00F5598F /* ViewModel */,
 				89B628872951B9A900F5598F /* View */,
 				89B628842951B7BF00F5598F /* Model */,
@@ -282,6 +285,14 @@
 				89B628892951B9C100F5598F /* CreateViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89B6288D2951D42F00F5598F /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				89B6288E2951D43F00F5598F /* CreateValidator.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +369,7 @@
 			files = (
 				89B6288C2951CAEC00F5598F /* CheckMarkView.swift in Sources */,
 				89A64E0D2950F05400C3080C /* Theme.swift in Sources */,
+				89B6288F2951D43F00F5598F /* CreateValidator.swift in Sources */,
 				89A64E3229510AE200C3080C /* DetailView.swift in Sources */,
 				89A64E0F2950F06500C3080C /* Symbols.swift in Sources */,
 				89A64E2B2950FB2800C3080C /* PeopleView.swift in Sources */,
