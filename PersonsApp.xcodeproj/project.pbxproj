@@ -26,6 +26,7 @@
 		89A64E362951147C00C3080C /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A64E352951147C00C3080C /* CreateView.swift */; };
 		89B6287D2951A9C600F5598F /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6287C2951A9C600F5598F /* NetworkingManager.swift */; };
 		89B628802951AE6F00F5598F /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6287F2951AE6F00F5598F /* PeopleViewModel.swift */; };
+		89B628832951B15400F5598F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B628822951B15400F5598F /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		89A64E352951147C00C3080C /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		89B6287C2951A9C600F5598F /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		89B6287F2951AE6F00F5598F /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		89B628822951B15400F5598F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		89A64E212950F54D00C3080C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				89B628812951B14400F5598F /* ViewModel */,
 				89A64E3329510AE700C3080C /* Views */,
 				89A64E232950F56100C3080C /* Models */,
 			);
@@ -236,6 +239,14 @@
 			isa = PBXGroup;
 			children = (
 				89B6287F2951AE6F00F5598F /* PeopleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89B628812951B14400F5598F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89B628822951B15400F5598F /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -327,6 +338,7 @@
 				89A64E132950F34700C3080C /* StaticJSONMapper.swift in Sources */,
 				89B628802951AE6F00F5598F /* PeopleViewModel.swift in Sources */,
 				89B6287D2951A9C600F5598F /* NetworkingManager.swift in Sources */,
+				89B628832951B15400F5598F /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
