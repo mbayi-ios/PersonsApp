@@ -40,8 +40,8 @@ struct PeopleView: View {
                     create
                 }
             }
-            .onAppear {
-                vm.fetchUsers()
+            .task {
+                await vm.fetchUsers()
             }
             .sheet(isPresented: $shouldShowCreate) {
                 CreateView {
@@ -53,7 +53,9 @@ struct PeopleView: View {
             }
             .alert(isPresented: $vm.hasError, error: vm.error) {
                 Button("Retry") {
-                    vm.fetchUsers()
+                    Task {
+                    await vm.fetchUsers()
+                    }
                 }
             }
             .overlay {
