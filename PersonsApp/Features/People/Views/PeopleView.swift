@@ -11,6 +11,7 @@ struct PeopleView: View {
     @StateObject private var vm = PeopleViewModel()
     @State private var shouldShowCreate = false
     @State private var shouldShowSuccess = false
+    @State private var hasAppeared = false
 
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     var body: some View {
@@ -38,6 +39,9 @@ struct PeopleView: View {
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     create
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    refresh
                 }
             }
             .task {
@@ -99,5 +103,15 @@ private extension PeopleView {
                         .bold())
         }
         .disabled(vm.isLoading)
+    }
+
+    var refresh: some View {
+        Button {
+            Task {
+                await vm.fetchUsers()
+            }
+        } label: {
+            Symbols.refresh
+        }
     }
 }
